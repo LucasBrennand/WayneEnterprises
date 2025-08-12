@@ -11,6 +11,7 @@
   --button-color: rgb(89, 118, 231);
   --text-color-primary: white;
   --text-font-primary: "Geo", sans-serif;
+  --text-size-primary: 35px;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   
 }
 
+/* LOGIN */
 .container{
   display: flex;
   justify-content: center;
@@ -63,5 +65,29 @@ body {
   &:hover{
     opacity: 0.5;
     transition-duration: 0.2s;
+  }
+}
+
+/* NAVBAR */
+header{
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-size-primary);
+  height: 50px;
+  background-color: var(--background-secondary);
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  a{
+    text-decoration: none;
+    cursor: pointer;
   }
 }
